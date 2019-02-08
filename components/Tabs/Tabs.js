@@ -33,7 +33,7 @@ class TabLink {
      Array.from(links).forEach(link => link.classList.remove('tabs-link-selected'));
 
     // Add a class named "tabs-link-selected" to this link
-     this.element = this.element.classList.add('tabs-link-selected');
+     this.element.classList.add('tabs-link-selected');
     
     // Call the select method on the item associated with this link
     this.tabItem.select();
@@ -57,7 +57,7 @@ class TabItem {
     items.forEach(item => item.classList.remove('tabs-item-selected'));
     
     // Add a class named "tabs-item-selected" to this element
-    this.element = this.element.classList.add('tabs-item-selected');
+     this.element.classList.add('tabs-item-selected');
   }
 }
 
